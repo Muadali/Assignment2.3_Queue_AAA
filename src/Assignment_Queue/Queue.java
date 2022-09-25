@@ -22,7 +22,7 @@ public class Queue<T> extends GenericLinkedList<T>{
 		}
 		
         	GenericNode < T > front = head ;
-        	head head.getNextNode ( ) ;
+        	head=head.getNextNode ( ) ;
         	this.length-- ;
         	return front ;
 } // end dequeue
