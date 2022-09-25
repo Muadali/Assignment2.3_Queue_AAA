@@ -3,7 +3,7 @@ package Assignment_Queue;
 public class GenericNode<T> {
 
 	private T data;  //data that the object stores
-	private GenericNode nextNode; //pointer to the nextNode that will be in LinkedList
+	private GenericNode<T> nextNode; //pointer to the nextNode that will be in LinkedList
 	
 	/**
 	 * Constructor build Node object. Initializes nextNode and data
@@ -35,7 +35,7 @@ public class GenericNode<T> {
 	 * This method returns itself to the caller.
 	 * @return
 	 */
-	public GenericNode getNode() {
+	public GenericNode<T> getNode() {
 		return this;
 	}//end getNode
 	
@@ -43,7 +43,7 @@ public class GenericNode<T> {
 	 * This method updates the pointer for the next node.
 	 * @param nextNode
 	 */
-	public void setNextNode(GenericNode nextNode)
+	public void setNextNode(GenericNode<T> nextNode)
 	{
 		this.nextNode=nextNode;
 	}//end setNextNode
@@ -52,7 +52,7 @@ public class GenericNode<T> {
 	 * This method returns the node stored in the next node pointer.
 	 * @return Node object
 	 */
-	public GenericNode getNextNode() {
+	public GenericNode<T> getNextNode() {
 		return nextNode;
 	}//end getNextNode
 	
