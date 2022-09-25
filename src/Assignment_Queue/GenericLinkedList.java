@@ -2,9 +2,9 @@ package Assignment_Queue;
 
 public class GenericLinkedList<T> {
 	
-	private GenericNode<T> head; //node to represent the head of the list
-	private GenericNode<T> tail; //node to represent the tail (end) of the list
-	private int length; //variable to keep track of the number of elements in the list
+	protected GenericNode<T> head; //node to represent the head of the list
+	protected GenericNode<T> tail; //node to represent the tail (end) of the list
+	protected int length; //variable to keep track of the number of elements in the list
 	
 	/**
 	 * The constructor for this object initializes the list such that
@@ -46,7 +46,7 @@ public class GenericLinkedList<T> {
 	 * of the list.
 	 * @param aNode
 	 */
-	@SuppressWarnings("unchecked")
+	
 	public void addNode(GenericNode<T> aNode)
 	{
 		if (isEmpty() ) {
@@ -61,6 +61,11 @@ public class GenericLinkedList<T> {
 		length++;
 		
 	}//end addNode
+	
+	public int getLength() {
+		return length;
+	
+	}
 
 	
 }//end class
