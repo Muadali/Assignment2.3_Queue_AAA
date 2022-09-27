@@ -1,7 +1,17 @@
 package Assignment_Queue;
 
-public class GenericNode<T> {
 
+/**
+ * This class models a Node object which can contain any type of object. Each
+ * node has its internal data (a String) and pointers to the next 
+ * node in the list.
+ * 
+ * @author Abdif
+ * Programming Project 1 Start Project
+ * CS131ON
+ */
+public class GenericNode<T> {
+	
 	private T data;  //data that the object stores
 	private GenericNode<T> nextNode; //pointer to the nextNode that will be in LinkedList
 	
