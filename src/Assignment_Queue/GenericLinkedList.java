@@ -1,7 +1,15 @@
 package Assignment_Queue;
 
+
+/**
+ * This class models a linked list in which each node has a pointer
+ * to the node after it, except the tail which does not have a node after.
+ * @author Abdif
+ * Programming Project 1 Start Project
+ * CS131ON
+ */
 public class GenericLinkedList<T> {
-	
+
 	protected GenericNode<T> head; //node to represent the head of the list
 	protected GenericNode<T> tail; //node to represent the tail (end) of the list
 	protected int length; //variable to keep track of the number of elements in the list
@@ -61,14 +69,9 @@ public class GenericLinkedList<T> {
 		length++;
 		
 	}//end addNode
-	
-	public int getLength() {
-		return length;
-	
-	}
 
-	
 }//end class
+
 
 
 
